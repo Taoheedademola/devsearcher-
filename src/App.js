@@ -12,6 +12,7 @@ function App() {
     function HandleChange(event) {
         const value=event.target.value
         setUsername(value)
+        
     }
     const fetchUsers= async ()=> {
         try {

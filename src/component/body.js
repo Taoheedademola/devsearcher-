@@ -1,7 +1,7 @@
 
 
 function Body (props) {
-    const {avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at}=props.user;
+    const {avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at}=user;
     return (
         <div className="body">
             <div>
