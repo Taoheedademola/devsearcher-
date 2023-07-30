@@ -1,6 +1,6 @@
 
 
-function Body ({user}) {
+function Body ({user}, props) {
     const {avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at}=user;
     const data = new Date(created_at);
     const dateformat =data.toLocaleDateString("en-GB", {
@@ -10,12 +10,12 @@ function Body ({user}) {
     })
   
     return (
-        <div className="body">
+        <div  className="body">
             <div>
                 <img className="bodyimg" src={
                     avatar_url} alt="" />
             </div>
-            <div className="body-1">
+            <div className="body-1" >
                 <div >
                     <div className="bdyoct">
                         <h1 className="octh1">{name }</h1>

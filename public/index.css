@@ -12,7 +12,7 @@
         margin-left: 20em;
     }
     body{
-        background-color: #f6f8FF;
+        background-color: #c7cde4;
     }
     
     .head{
@@ -21,7 +21,7 @@
     }
     
     .h1{
-        margin-right: 15em;
+        margin-right: 14.5em;
     }
     
     .search{
@@ -39,6 +39,7 @@
         outline: none;
         padding: 1.2em 1.5em;
         border: 0;
+        font-size: 1.5em;
     }
     .searchbtn{
         border: 0;
@@ -133,13 +134,13 @@
         align-items:center;
     } 
     .h1{
-        margin-right: 10em;
+        margin-right: 9.5em;
     }
     .search{
         border: 10px solid none;
         display: grid;
         background-color: #fff;
-        grid-template-columns: 3em 19em 8.2em 27px;
+        grid-template-columns: 3.5em 19.4em 8.2em 27px;
         padding: .1em .3em;
         border-radius: 1em;
         align-items: center;
@@ -172,7 +173,7 @@
         
         background-color: #fff;
         display: grid;
-        grid-template-columns: 8.5em 23.4em ;
+        grid-template-columns: 9em 24em ;
         padding: 1.2em .5em;
         border-radius: 2em;
     }
@@ -215,4 +216,14 @@
     .socialtxt{
         color: #687c9a;
     }
+}
+
+.searchbtn:hover{
+    opacity: 0.5;
+}
+
+.dark{
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }

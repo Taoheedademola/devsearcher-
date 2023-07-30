@@ -6,6 +6,7 @@ import axios from "axios"
 function App() {
     const [username, setUsername]=useState("octocat")
     const [users, setUsers]=useState({})
+    const [state, setState]=useState(false)
     const baseUrl=axios.create({
         baseURL: "https://api.github.com"
     })
@@ -32,16 +33,27 @@ function App() {
 
       useEffect(()=> fetchUsers(), [])
 
-    return (
+      function HandleClick1() {
+        setState(preValue =>{
+            return !preValue
+        })
+      }
 
-        <div className="app">
-            <Head />
+    return (
+        
+        <div className="app" >
+            <Head 
+            handleclick2={HandleClick1}
+            gb={state}
+            />
             <Search 
             onchange={HandleChange}
             onclick={HandleClick}
+            gb={state}
             value={username}
             />
            <Body
+          style={{backgroundColor: state ? "#1E2A47" : "#fff", color: state ? "#fff" : "#1E2A47"}}
            user={users}
            /> 
         </div>
