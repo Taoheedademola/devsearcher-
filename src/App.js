@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import React, {  useEffect, useState } from "react";
 import Head from "./component/head"
 import Search from "./component/searchbar"
 import Body from "./component/body"
@@ -16,20 +16,21 @@ function App() {
     }
     const fetchUsers= async ()=> {
         try {
-            const {data}= await baseUrl.get("/users/" + username);
-            return data?.items;
+             if (username) {
+                 const {data}= await baseUrl.get("/users/" + username);
+                 setUsers(data)
+          
+       }
         } catch (error) {
             return null
         }
     }
       async function HandleClick(event) {
        event.preventDefault();
-       if (username) {
-          const items= await fetchUsers();
-         setUsers(items)
-          console.log(items);
-       }
+       fetchUsers()
       }
+
+      useEffect(()=> fetchUsers(), [])
 
     return (
 

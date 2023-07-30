@@ -1,17 +1,25 @@
 
 
-function Body (user) {
+function Body ({user}) {
     const {avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at}=user;
+    const data = new Date(created_at);
+    const dateformat =data.toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    })
+  
     return (
         <div className="body">
             <div>
-                <img className="bodyimg" src={avatar_url} alt="" />
+                <img className="bodyimg" src={
+                    avatar_url} alt="" />
             </div>
             <div className="body-1">
                 <div >
                     <div className="bdyoct">
-                        <h1 className="octh1">{name}</h1>
-                        <span className="octspan1">{created_at}</span>
+                        <h1 className="octh1">{name }</h1>
+                        <span className="octspan1">{dateformat}</span>
                         <span className="octspn2">@{login}</span>
                     </div>
                     <span className="octspan3">{bio}</span>
@@ -22,7 +30,7 @@ function Body (user) {
                         <span className="repnumber">{public_repos}</span>
                     </div>
                     <div className="repobody">
-                        <span className="repo">Followes</span>
+                        <span className="repo">Followers</span>
                         <span className="repnumber">{followers}</span>
                     </div>
                     <div className="repobody">
