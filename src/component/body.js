@@ -1,6 +1,6 @@
 
 
-function Body ({user}, props) {
+function Body ({user}) {
     const {avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at}=user;
     const data = new Date(created_at);
     const dateformat =data.toLocaleDateString("en-GB", {
@@ -10,7 +10,7 @@ function Body ({user}, props) {
     })
   
     return (
-        <div  className="body">
+        <div style={{backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47"}} className="body">
             <div>
                 <img className="bodyimg" src={
                     avatar_url} alt="" />

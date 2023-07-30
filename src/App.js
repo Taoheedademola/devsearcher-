@@ -53,7 +53,7 @@ function App() {
             value={username}
             />
            <Body
-          
+          gb={state}
            user={users}
            /> 
         </div>
