@@ -53,7 +53,7 @@ function App() {
             value={username}
             />
            <Body
-          style={{backgroundColor: state ? "#1E2A47" : "#fff", color: state ? "#fff" : "#1E2A47"}}
+          
            user={users}
            /> 
         </div>
