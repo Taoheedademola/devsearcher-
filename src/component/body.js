@@ -1,16 +1,16 @@
 
 
-function Body (props) {
-    const {avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at}=props.user;
+function Body(props) {
+    const { avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at } = props.user;
     const data = new Date(created_at);
-    const dateformat =data.toLocaleDateString("en-GB", {
+    const dateformat = data.toLocaleDateString("en-GB", {
         day: "numeric",
         month: "long",
         year: "numeric"
     })
-  
+
     return (
-        <div style={{backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47"}} >
+        <div style={{ backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47" }} className="bo">
             <div className="body">
             <div>
                 <img className="bodyimg" src={
@@ -19,14 +19,17 @@ function Body (props) {
             <div className="body-1" >
                 <div >
                     <div className="bdyoct">
-                        <h1 className="octh1">{name }</h1>
+                        <h1 className="octh1">{name}</h1>
                         <span className="octspan1">{dateformat}</span>
                         <span className="octspn2">@{login}</span>
                     </div>
-            </div>       
-                    <span className="octspan3">{bio}</span>
                 </div>
-                <div className="rep" style={{backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47"}}>
+            </div>
+            </div>
+            <div className="newboi"> 
+                <span className="octspan3">{bio}</span>
+
+                <div className="rep" style={{ backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47" }}>
                     <div className="repobody">
                         <span className="repo">Repos</span>
                         <span className="repnumber">{public_repos}</span>

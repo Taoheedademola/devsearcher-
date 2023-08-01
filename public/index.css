@@ -21,14 +21,14 @@
     }
     
     .h1{
-        margin-right: 14.5em;
+        margin-right: 17em;
     }
     
     .search{
         border: 10px solid none;
         display: grid;
         background-color: #fff;
-        grid-template-columns: 40px 31em 8em 10px;
+        grid-template-columns: 40px 33em 11em 10px;
         padding: 1em .5em;
         border-radius: 1em;
         align-items: center;
@@ -55,11 +55,21 @@
     
     .body{
         
-        background-color: #fff;
+        
         display: grid;
-        grid-template-columns: 10em 30em ;
+        grid-template-columns: 12em 33.4em ;
+       
+    }
+    .bo{
+        background-color: #fff;
         padding: 2em 1.5em;
         border-radius: 2em;
+    }
+    .newboi{
+        margin-left:12.3em ;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
     }
     
     .bodyimg{
@@ -71,13 +81,12 @@
     
     .bdyoct{
         display: grid;
-        grid-template-columns: 15em 30em;
+        grid-template-columns: 23em 29em;
         align-items: center;
         grid-template-rows: 60px 30px;
     }
     
     .octspn2{
-        margin-top: 10px;
         margin-bottom: 10px ;
         color: #6879ff;
     }
@@ -89,10 +98,10 @@
     .rep{
         display: grid;
         grid-template-columns: repeat(3, .7fr);
-        background-color: #f6f8FF;
-        padding: 1em 2em;
+        /* padding: 1em 4em; */
         margin-top: 1.5em;
         border-radius: .8em;
+        background-color: #2e3e6ed3;
     }
     .repobody{
         display: flex;
@@ -127,6 +136,7 @@
     }
     body{
         background-color: #f6f8FF;
+        padding: 15px;
     }
     
     .head{
@@ -134,13 +144,13 @@
         align-items:center;
     } 
     .h1{
-        margin-right: 9.5em;
+        margin-right: 6.6em;
     }
     .search{
         border: 10px solid none;
         display: grid;
         background-color: #fff;
-        grid-template-columns: 3.5em 19.4em 8.2em 27px;
+        grid-template-columns: 3.5em 15.4em 6.2em 27px;
         padding: .1em .3em;
         border-radius: 1em;
         align-items: center;
@@ -169,17 +179,28 @@
         height: 8em;
         border-radius: 50%;
     }
+  
     .body{
-        
-        background-color: #fff;
         display: grid;
-        grid-template-columns: 9em 24em ;
+        grid-template-columns: 10em 16em ;
+        padding-left: 4px;
+       
+    }
+    .bo{
+        background-color: #fff;
         padding: 1.2em .5em;
         border-radius: 2em;
     }
+    .newboi{
+        margin-left:.3em ;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
     .bdyoct{
         display: grid;
-        grid-template-rows: 60px 30px;
+        grid-template-rows: 100px 30px;
     }
     
     .octspn2{
@@ -188,6 +209,10 @@
     
     .octspan3{
         color: #687c9a;
+    }
+    .newboi{
+        display: flex;
+        margin-top: 2em;
     }
     .rep{
         display: grid;
