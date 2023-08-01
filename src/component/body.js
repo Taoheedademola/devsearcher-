@@ -10,7 +10,8 @@ function Body (props) {
     })
   
     return (
-        <div style={{backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47"}} className="body">
+        <div style={{backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47"}} >
+            <div className="body">
             <div>
                 <img className="bodyimg" src={
                     avatar_url} alt="" />
@@ -22,6 +23,7 @@ function Body (props) {
                         <span className="octspan1">{dateformat}</span>
                         <span className="octspn2">@{login}</span>
                     </div>
+            </div>       
                     <span className="octspan3">{bio}</span>
                 </div>
                 <div className="rep" style={{backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47"}}>
