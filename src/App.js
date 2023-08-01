@@ -31,7 +31,12 @@ function App() {
        fetchUsers()
       }
 
-      useEffect(()=> fetchUsers(), [])
+      useEffect(()=> {
+        const getOctocat = async () => {
+            fetchUsers()
+        }
+        getOctocat()
+      }, [])
 
       function HandleClick1() {
         setState(preValue =>{

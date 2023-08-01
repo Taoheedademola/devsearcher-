@@ -1,7 +1,7 @@
 
 
-function Body ({user}, props) {
-    const {avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at}=user;
+function Body (props) {
+    const {avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at}=props.user;
     const data = new Date(created_at);
     const dateformat =data.toLocaleDateString("en-GB", {
         day: "numeric",
@@ -24,7 +24,7 @@ function Body ({user}, props) {
                     </div>
                     <span className="octspan3">{bio}</span>
                 </div>
-                <div className="rep">
+                <div className="rep" style={{backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47"}}>
                     <div className="repobody">
                         <span className="repo">Repos</span>
                         <span className="repnumber">{public_repos}</span>
@@ -38,7 +38,7 @@ function Body ({user}, props) {
                         <span className="repnumber">{following}</span>
                     </div>
                 </div>
-                <div className="social">
+                <div className="social" >
                     <div className="socialall">
                         <img src="https://gh-user-sa.qudusayo.me/static/media/icon-location.f11c5487a9922cbad40a27e8cc1cfaee.svg" alt="" className="socialimg" />
                         < span className="socialtxt">{location}</span>
