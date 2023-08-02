@@ -1,13 +1,19 @@
-
-
 function Body(props) {
     const { avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at } = props.user;
     const data = new Date(created_at);
+    let bios;
+    if (bio === null || bio === "") {
+         bios = "This user has no bio"
+    }
     const dateformat = data.toLocaleDateString("en-GB", {
         day: "numeric",
         month: "long",
         year: "numeric"
     })
+    let lnt;
+    if (location === null || twitter_username===null || blog === null || company===null) {
+        lnt = "Not available"
+    }
 
     return (
         <div style={{ backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47" }} className="bo">
@@ -29,10 +35,10 @@ function Body(props) {
             </div>
             </div>
             <div className="newboi"> 
-                <span className="octspan3">{bio}</span>
+                <span className="octspan3">{bio || bios}</span>
 
-                <div className="rep" style={{ backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47" }}>
-                    <div className="nwrep"style={{ backgroundColor: props.gb ? "#1E2A47" : "#f6f8FF", color: props.gb ? "#fff" : "#1E2A47" }}>
+                <div className="rep" >
+                    <div className="nwrep"style={{ backgroundColor: props.gb ? "#0a0a25c9" : "#f6f8FF", color: props.gb ? "#fff" : "#1E2A47" }}>
                     <div className="repobody">
                         <span className="repo">Repos</span>
                         <span className="repnumber">{public_repos}</span>
@@ -50,19 +56,19 @@ function Body(props) {
                 <div className="social" >
                     <div className="socialall">
                         <img src="https://gh-user-sa.qudusayo.me/static/media/icon-location.f11c5487a9922cbad40a27e8cc1cfaee.svg" alt="" className="socialimg" />
-                        < span className="socialtxt">{location}</span>
+                        < a  className="socialtxt">{location || lnt}</a>
                     </div>
                     <div className="socialall">
                         <img src="https://gh-user-sa.qudusayo.me/static/media/icon-twitter.f6a2a695fbb260b28a9fd67dd4179ea5.svg" alt="" className="socialimg" />
-                        < span className="socialtxt">{twitter_username}</span>
+                        < span className="socialtxt">{twitter_username || lnt}</span>
                     </div>
                     <div className="socialall">
                         <img src="https://gh-user-sa.qudusayo.me/static/media/icon-website.b7923f6c1dae9717c079c60d8a5c82e5.svg" alt="" className="socialimg" />
-                        < span className="socialtxt">{blog}</span>
+                        < span className="socialtxt">{blog || lnt}</span>
                     </div>
                     <div className="socialall">
                         <img src="https://gh-user-sa.qudusayo.me/static/media/icon-company.6f78ffb334b191c8ed54d0c2a6f7cc25.svg" alt="" className="socialimg" />
-                        < span className="socialtxt">{company}</span>
+                        < span className="socialtxt">{company || lnt}</span>
                     </div>
                 </div>
             </div>

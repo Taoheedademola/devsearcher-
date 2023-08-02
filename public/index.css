@@ -12,7 +12,7 @@
         margin-left: 20em;
     }
     body{
-        background-color: #c7cde4;
+        background-color: #a5accce3;
     }
     
     .head{
@@ -52,13 +52,9 @@
     .searchimg{
         padding-left:10px ;
     }
-    
     .body{
-        
-        
         display: grid;
         grid-template-columns: 12em 33.4em ;
-       
     }
     .bo{
         background-color: #fff;
@@ -138,7 +134,10 @@
         margin-left: 10px;
     }
 }
-
+.repnumber{
+    font-size: 2em;
+    font-weight: bolder;
+}
 @media only screen and (max-width: 700px) {
     *{
         font-family: 'Space Mono', monospace
@@ -150,8 +149,8 @@
         align-items:flex-start;
     }
     body{
-        background-color: #f6f8FF;
-        padding: 15px;
+        background-color: #dcdfeb;
+        padding: 13px;
     }
     
     .head{
@@ -159,13 +158,13 @@
         align-items:center;
     } 
     .h1{
-        margin-right: 4.6em;
+        margin-right: 3em;
     }
     .search{
         border: 10px solid none;
         display: grid;
         background-color: #fff;
-        grid-template-columns: 3.5em 13.4em 4.5em 27px;
+        grid-template-columns: 3em 12em 4em 15px;
         padding: .1em .3em;
         border-radius: 1em;
         align-items: center;
@@ -175,7 +174,7 @@
         outline: none;
         padding: 1.2em 1.5em;
         border: 0;
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
     .searchbtn{
         border: 0;
@@ -197,9 +196,8 @@
   
     .body{
         display: grid;
-        grid-template-columns: 9em 13em ;
+        grid-template-columns: 9em 11em ;
         padding-left: 4px;
-       
     }
     .bo{
         background-color: #fff;
@@ -229,6 +227,7 @@
     
     .octspan3{
         color: #687c9a;
+        max-width:17em;
     }
     .newboi{
         display: flex;
@@ -236,14 +235,13 @@
         align-items: center;
     }
     .rep{
-        
         margin-top: 1.5em;
         margin-bottom: .4em;
         width: fit-content;
     }
     .nwrep{
         display: grid;
-        grid-template-columns: 5em 6em 5em;
+        grid-template-columns: 4em 6em 5em;
         background-color: #f6f8FF;
         padding: 1em 2em;
         border-radius: .8em;
@@ -278,4 +276,6 @@
     display: flex;
     align-items: center;
     gap: 4px;
+}body{
+    margin: 0;
 }
