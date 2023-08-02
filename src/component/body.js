@@ -19,9 +19,11 @@ function Body(props) {
             <div className="body-1" >
                 <div >
                     <div className="bdyoct">
-                        <h1 className="octh1">{name}</h1>
-                        <span className="octspan1">{dateformat}</span>
+                        <div className="olo">
+                        <span className="octh1">{name}</span><br/>
                         <span className="octspn2">@{login}</span>
+                        </div>
+                        <span className="octspan1">{dateformat}</span>
                     </div>
                 </div>
             </div>
@@ -30,6 +32,7 @@ function Body(props) {
                 <span className="octspan3">{bio}</span>
 
                 <div className="rep" style={{ backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47" }}>
+                    <div className="nwrep"style={{ backgroundColor: props.gb ? "#1E2A47" : "#f6f8FF", color: props.gb ? "#fff" : "#1E2A47" }}>
                     <div className="repobody">
                         <span className="repo">Repos</span>
                         <span className="repnumber">{public_repos}</span>
@@ -41,6 +44,7 @@ function Body(props) {
                     <div className="repobody">
                         <span className="repo">Following</span>
                         <span className="repnumber">{following}</span>
+                    </div>
                     </div>
                 </div>
                 <div className="social" >

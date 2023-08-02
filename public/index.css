@@ -95,14 +95,7 @@
         color: #687c9a;
     }
     
-    .rep{
-        display: grid;
-        grid-template-columns: repeat(3, .7fr);
-        /* padding: 1em 4em; */
-        margin-top: 1.5em;
-        border-radius: .8em;
-        background-color: #2e3e6ed3;
-    }
+  
     .repobody{
         display: flex;
         flex-direction: column;
@@ -121,6 +114,28 @@
     }
     .socialtxt{
         color: #687c9a;
+    }
+    .octh1{
+        font-size: 2.5em;
+    }
+    .olo{
+        margin-top: 2em;
+    }
+    .newboi{
+        display: flex;
+    }
+    .rep{
+        
+        margin-top: 1.5em;
+        margin-bottom: .4em;
+    }
+    .nwrep{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #f6f8FF;
+        padding: 1em 2em;
+        border-radius: .8em;
+        margin-left: 10px;
     }
 }
 
@@ -144,13 +159,13 @@
         align-items:center;
     } 
     .h1{
-        margin-right: 6.6em;
+        margin-right: 4.6em;
     }
     .search{
         border: 10px solid none;
         display: grid;
         background-color: #fff;
-        grid-template-columns: 3.5em 15.4em 6.2em 27px;
+        grid-template-columns: 3.5em 13.4em 4.5em 27px;
         padding: .1em .3em;
         border-radius: 1em;
         align-items: center;
@@ -182,27 +197,32 @@
   
     .body{
         display: grid;
-        grid-template-columns: 10em 16em ;
+        grid-template-columns: 9em 13em ;
         padding-left: 4px;
        
     }
     .bo{
         background-color: #fff;
         padding: 1.2em .5em;
-        border-radius: 2em;
+        border-radius: 1.4em;
     }
     .newboi{
         margin-left:.3em ;
         display: flex;
         flex-direction: column;
-        justify-content: left;
+        justify-content: center;
     }
     
     .bdyoct{
         display: grid;
-        grid-template-rows: 100px 30px;
+        grid-template-rows: 70px 30px;
     }
-    
+    .octh1{
+        font-size: 1.5em;
+    }
+    .olo{
+        margin-bottom: 0;
+    }
     .octspn2{
         color: #6879ff;
     }
@@ -212,16 +232,22 @@
     }
     .newboi{
         display: flex;
-        margin-top: 2em;
+        justify-content: center;
+        align-items: center;
     }
     .rep{
+        
+        margin-top: 1.5em;
+        margin-bottom: .4em;
+        width: fit-content;
+    }
+    .nwrep{
         display: grid;
-        grid-template-columns: repeat(3, 1.7fr);
+        grid-template-columns: 5em 6em 5em;
         background-color: #f6f8FF;
         padding: 1em 2em;
-        margin-top: 1.5em;
         border-radius: .8em;
-        margin-bottom: 1.3em;
+        margin-left: 10px;
     }
     .repobody{
         display: flex;
@@ -229,9 +255,10 @@
     }
     .social{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, .7fr);
         padding-top: 2em;
         gap: .6em;
+        align-items: center;
     }
     .socialall{
         display: flex;
