@@ -50,6 +50,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .bo {
@@ -92,8 +93,8 @@ body {
 
 .nwrep {
     display: grid;
-    grid-template-columns: 10% 79% 0%;
-    padding: 1em;
+    grid-template-columns: 6% 79% 0%;
+    padding: 1.1em;
     border-radius: 1em;
 }
 
