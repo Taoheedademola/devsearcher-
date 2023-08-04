@@ -92,7 +92,7 @@ body {
 
 .nwrep {
     display: grid;
-    grid-template-columns: 11% 77% 0%;
+    grid-template-columns: 10% 79% 0%;
     padding: 1em;
     border-radius: 1em;
 }
@@ -158,6 +158,9 @@ body {
     .social {
         display: grid;
         grid-template-rows: repeat(4, 2.5em);
+    }
+    .newrep{
+        max-width: 100%;
     }
 }
 
