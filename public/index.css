@@ -93,7 +93,7 @@ body {
 
 .nwrep {
     display: grid;
-    grid-template-columns: 3% 79% 0%;
+    grid-template-columns: 6% 81% 0%;
     padding: 1.1em;
     border-radius: 1em;
 }
