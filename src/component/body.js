@@ -2,9 +2,11 @@ function Body(props) {
     const { avatar_url, login, name, location, followers, bio, following, public_repos, twitter_username, company, blog, created_at } = props.user;
     const data = new Date(created_at);
     let bios;
+    let hy;
     if (bio === null || bio === "") {
          bios = "This user has no bio"
     }
+
     const dateformat = data.toLocaleDateString("en-GB", {
         day: "numeric",
         month: "long",
@@ -15,6 +17,9 @@ function Body(props) {
         lnt = "Not available"
     }
 
+    if (name === null || name === "") {
+        hy = "Not available"
+    }
     return (
         <div style={{ backgroundColor: props.gb ? "#1E2A47" : "#fff", color: props.gb ? "#fff" : "#1E2A47" }} className="bo">
             <div className="body">
@@ -26,7 +31,7 @@ function Body(props) {
                 <div >
                     <div className="bdyoct">
                         <div className="olo">
-                        <span className="octh1">{name}</span><br/>
+                        <span className="octh1">{name || hy}</span><br/>
                         <span className="octspn2">@{login}</span>
                         </div>
                         <span className="octspan1">{dateformat}</span>
@@ -56,7 +61,7 @@ function Body(props) {
                 <div className="social" >
                     <div className="socialall">
                         <img src="https://gh-user-sa.qudusayo.me/static/media/icon-location.f11c5487a9922cbad40a27e8cc1cfaee.svg" alt="" className="socialimg" />
-                        < a  className="socialtxt">{location || lnt}</a>
+                        < span  className="socialtxt">{location || lnt}</span>
                     </div>
                     <div className="socialall">
                         <img src="https://gh-user-sa.qudusayo.me/static/media/icon-twitter.f6a2a695fbb260b28a9fd67dd4179ea5.svg" alt="" className="socialimg" />

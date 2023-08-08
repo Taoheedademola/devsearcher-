@@ -140,10 +140,11 @@ body {
         height: 4em;
     }
     .octh1{
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .octspan1 {
-        max-width: 70%
+        max-width: 70%;
+        font-size: 40%;
     }
 
     .newboi {
