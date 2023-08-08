@@ -94,7 +94,7 @@ body {
 
 .nwrep {
     display: grid;
-    grid-template-columns: 6% 81% 0%;
+    grid-template-columns: 5.6% 81.2% 0%;
     padding: 1.1em;
     border-radius: 1em;
 }
@@ -140,11 +140,11 @@ body {
         height: 4em;
     }
     .octh1{
-        font-size: 1em;
+        font-size: 100%;
     }
     .octspan1 {
         max-width: 70%;
-        font-size: 40%;
+        font-size: 100%;
     }
 
     .newboi {
@@ -199,5 +199,9 @@ body {
     }
     .app{
        max-width: 85%;
+    }
+    .octh1{
+        font-size: 1.8em;
+        max-width: 60%;
     }
 }

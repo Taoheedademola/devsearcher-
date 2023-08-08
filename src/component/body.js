@@ -34,7 +34,7 @@ function Body(props) {
                         <span className="octh1">{name || hy}</span><br/>
                         <span className="octspn2">@{login}</span>
                         </div>
-                        <span className="octspan1">{dateformat}</span>
+                        <span className="octspan1">joined {dateformat}</span>
                     </div>
                 </div>
             </div>
